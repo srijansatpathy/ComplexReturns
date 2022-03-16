@@ -56,3 +56,4 @@ Due to technical limitations, we opted to choose a random sample of 50 tickers f
 
 ## Tutorials used: 
 https://realpython.com/natural-language-processing-spacy-python/: This tutorial was used to download spacy library as well as models and data for the English language. Beyond the downloading process the project is different to the tutorial because it implemenents the tokenization of words to determine the complexity of words. More specifically, our project specifically looks at if the token (word) has 3 or more syllables, ends in "ing", ends in "ed', ends in "es", and if it is a proper noun to determine whether it is considered a complex word accounding to the Gunning Fog Index criteria. Additionally, our project creates a Gunning Fog function that returns a Gunning Fog Index (which is not in the tutorial). 
+
