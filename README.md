@@ -82,3 +82,6 @@ The files 'ticker_shares,' 'tickers_2018,' and 'tickers_used' are all additional
 https://realpython.com/natural-language-processing-spacy-python/: This tutorial was used to download spacy library as well as models and data for the English language. Beyond the downloading process the project is different to the tutorial because it implemenents the tokenization of words to determine the complexity of words. More specifically, our project specifically looks at if the token (word) has 3 or more syllables, ends in "ing", ends in "ed', ends in "es", and if it is a proper noun to determine whether it is considered a complex word accounding to the Gunning Fog Index criteria. Additionally, our project creates a Gunning Fog function that returns a Gunning Fog Index (which is not in the tutorial). 
 
 https://www.youtube.com/watch?v=O6nnVHPjcJU&t=320s: This tutorial was just an introduction to Beautiful Soup, but our project expanded on this implementation by splitting the text by new lines to generate a list of overall lines in the text. Moreover, our implementation did text processing on the url data by generating a list of company executives. Furthermore, we ran a Gunning Fog object on each bit of extracted text, thus we utilized the package to yield quantitative data about its complexity. 
+
+## Software demo video: 
+https://youtu.be/1-sx0vTjEEY
