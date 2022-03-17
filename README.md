@@ -65,7 +65,9 @@ We scraped the initial list of tickers using the following methods from yahoo_fi
 
 From this initial list of ~12000 tickers, we first removed all non-equities to get a list of ~6000 companies, and we secondly removed companies that did not exist past the date 1/1/18 for a final list of ~4000 companies.
 
-Due to technical limitations, we opted to choose a random sample of 50 tickers from this final list to use in our project. This random sample is in the file ‘tickers_used,’ and the relevant price histories of the tickers in it are in the file ‘data.csv’.
+Due to technical limitations, we opted to choose a random sample of 50 tickers (and later trimmed to 13) from this final list to use in our project. This random sample and their relevant price histories are in the file ‘data.csv’.
+
+The files 'ticker_shares,' 'tickers_2018,' and 'tickers_used' are all additional pickle data files but not needed/referenced in our demo 'Complexity.ipynb'.  
 
 ## Tutorials used: 
 https://realpython.com/natural-language-processing-spacy-python/: This tutorial was used to download spacy library as well as models and data for the English language. Beyond the downloading process the project is different to the tutorial because it implemenents the tokenization of words to determine the complexity of words. More specifically, our project specifically looks at if the token (word) has 3 or more syllables, ends in "ing", ends in "ed', ends in "es", and if it is a proper noun to determine whether it is considered a complex word accounding to the Gunning Fog Index criteria. Additionally, our project creates a Gunning Fog function that returns a Gunning Fog Index (which is not in the tutorial). 
