@@ -1,0 +1,7 @@
+beautifulsoup4==4.10.0
+matplotlib==3.2
+numpy==1.20.1
+pandas==1.2.4
+requests==2.27.1
+spacy==3.2.3
+spacy_syllables==3.0.1
