@@ -3,7 +3,6 @@ import yfinance as yf
 import pickle
 import random
 
-
 #Downloads all known tickers-- here we use a preexisting library for convenience
 ticker_download = [si.tickers_dow(), si.tickers_other(), si.tickers_ftse100(), si.tickers_nasdaq(), si.tickers_niftybank(), si.tickers_ftse250(), si.tickers_ibovespa(), si.tickers_nifty50(), si.tickers_sp500()]
 
@@ -50,7 +49,6 @@ for key in list(ticker_shares.keys()):
     if ticker_shares[key] == None:
         del ticker_shares[key]
         tickers.remove(key)
-
 
 #Trim down list of tickers to ones that existed in 2018 onwards
 tickers_2018 = tickers
