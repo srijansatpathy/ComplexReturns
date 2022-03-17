@@ -9,7 +9,7 @@ PIC 16A Group 3 Project
   Petra Portabella Jarosilova  
 
 ## Project Description:
-In our project, we will analyze the correlation between the language used by corporate executives and the relative stock returns of their companies. Our hypothesis is that clear and concise language relates to larger returns. To construct this cross-association, we will use quarterly earnings calls for our repository of executive speech patterns, and we will use the Gunning-Fox algorithm to rank their complexity. 
+In our project, we will analyze the correlation between the language used by corporate executives and the relative stock returns of their companies. Our hypothesis is that clear and concise language relates to larger returns. To construct this cross-association, we will use quarterly earnings calls for our repository of executive speech patterns, and we will use the Gunning-Fog algorithm to rank their complexity. 
 
 ## Instructions on how to install the package requirements:
 To install the spacy library run the following code in your command line:
@@ -40,7 +40,7 @@ At the output of this demo file should be the following two figures:
 ### Figure 2:
 <img width="424" alt="Screen Shot 2022-03-16 at 3 30 53 PM" src="https://user-images.githubusercontent.com/97066940/158702505-ac0bfd91-df4e-4a79-9f5e-9f128bf752ba.png">
 
-Figure 1 is a scatter plot of the Gunning Fog Index and the 2019 Q1 returns. Each dot on the plot is representative of one company that we looked at. As we can see there is not a very clear correlation that is visible by the naked eye. However, we added the correlation coefficient (-0.32) on top of the figure, which is indicative to a weak negative correlation.
+Figure 1 is a scatter plot of the Gunning-Fog Index and the 2019 Q1 returns. Each dot on the plot is representative of one company that we looked at. As we can see there is not a very clear correlation that is visible by the naked eye. However, we added the correlation coefficient (-0.32) on top of the figure, which is indicative to a weak negative correlation.
 To further investigate this correlation, we decided to plot a regression line on the scatter plot as we can see in Figure 2. Again, we see that the regression line is sloped downwards, indicating a negative correlation. 
 Our results weakly show that the more complex the language is in earning calls the less returns we would expect from the given company.
 
@@ -70,4 +70,4 @@ Due to technical limitations, we opted to choose a random sample of 50 tickers (
 The files 'ticker_shares,' 'tickers_2018,' and 'tickers_used' are all additional pickle data files but not needed/referenced in our demo 'Complexity.ipynb'.  
 
 ## Tutorials used: 
-https://realpython.com/natural-language-processing-spacy-python/: This tutorial was used to download spacy library as well as models and data for the English language. Beyond the downloading process the project is different to the tutorial because it implemenents the tokenization of words to determine the complexity of words. More specifically, our project specifically looks at if the token (word) has 3 or more syllables, ends in "ing", ends in "ed', ends in "es", and if it is a proper noun to determine whether it is considered a complex word accounding to the Gunning Fog Index criteria. Additionally, our project creates a Gunning Fog function that returns a Gunning Fog Index (which is not in the tutorial). 
+https://realpython.com/natural-language-processing-spacy-python/: This tutorial was used to download spacy library as well as models and data for the English language. Beyond the downloading process the project is different to the tutorial because it implemenents the tokenization of words to determine the complexity of words. More specifically, our project specifically looks at if the token (word) has 3 or more syllables, ends in "ing", ends in "ed', ends in "es", and if it is a proper noun to determine whether it is considered a complex word accounding to the Gunning-Fog Index criteria. Additionally, our project creates a Gunning-Fog function that returns a Gunning-Fog Index (which is not in the tutorial). 
