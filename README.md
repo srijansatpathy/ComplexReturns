@@ -1,5 +1,4 @@
-# PythonProject
-PIC 16A Group 3 Project
+# PIC 16A Group 3 Project
 
 ## Project Name: Complex Returns
 
@@ -12,7 +11,7 @@ PIC 16A Group 3 Project
 In our project, we will analyze the correlation between the language used by corporate executives and the relative stock returns of their companies. Our hypothesis is that clear and concise language relates to larger returns. To construct this cross-association, we will use quarterly earnings calls for our repository of executive speech patterns, and we will use the Gunning Fog algorithm to rank their complexity. 
 
 ## Instructions on how to install the package requirements:
-Using the requirements.txt file, simply run the following line in your environment's command line (we used a virtual environment for testing, which can be created with "python -m venv venv"):
+Using the requirements.txt file in the PythonProject folder, simply run the following line in your environment's command line (we used a virtual environment for testing, which can be created with "python -m venv venv"):
 >pip install -r /path/to/requirements.txt
 
 For individual non-standard package installation:
@@ -71,12 +70,11 @@ yahoo_fin reference: http://theautomatic.net/yahoo_fin-documentation/
 yfinance reference: https://algotrading101.com/learn/yfinance-guide/
 
 ## Background and source of the dataset:
-
 We scraped the initial list of tickers using the following methods from yahoo_fin’s stock_info module: tickers_dow(), tickers_other(), tickers_ftse100(), tickers_nasdaq(), tickers_niftybank(), tickers_ftse250(), tickers_ibovespa(), tickers_nifty50(), and tickers_sp500(). This provided all tickers that existed at the date of request (3/1/22).
 
 From this initial list of ~12000 tickers, we first removed all non-equities to get a list of ~6000 companies, and we secondly removed companies that did not exist past the date 1/1/18 for a final list of ~4000 companies.
 
-Due to technical limitations, we opted to choose a random sample of 50 tickers (and later trimmed to 13) from this final list to use in our project. This random sample and their relevant price histories are in the file ‘data.csv’ in the PythonProject subfolder.
+Due to technical limitations, we opted to choose a random sample of 50 tickers (and later trimmed to 13) from this final list to use in our project. This random sample and their relevant price histories are in the file ‘data.csv’ in the PythonProject folder.
 
 The files 'ticker_shares,' 'tickers_2018,' and 'tickers_used' are all additional pickle data files but not needed/referenced in our demo 'Complexity.ipynb'. Furthermore, the files 'data' and 'tickers' were used for the data.csv extraction, but are also not needed for the demo.
 
