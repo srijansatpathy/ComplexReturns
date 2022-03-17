@@ -27,7 +27,7 @@ To install the yahoo_fin library run the following code in your command line:
 
 >pip install yahoo_fin
 
-To install the yfiannce library run the following code in your command line:
+To install the yfinance library run the following code in your command line:
 
 >pip install yfinance --upgrade --no-cache-dir
 
